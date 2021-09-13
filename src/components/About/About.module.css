@@ -1,0 +1,20 @@
+.About {
+    background: url(https://chaycoff.ru/wp-content/uploads/2019/12/cropped-5778743-dark-wood-wallpapers.jpg) center no-repeat;
+    border: 2px solid black;
+    margin: 50px auto;
+    width: 90%;
+    padding: 10px 50px;
+    color: black;
+    box-shadow: 5px 5px 5px 1px black;
+
+}
+
+.About h2 {
+    color: white;
+}
+.About p {
+    color: white;
+}
+.About span {
+    color: white;
+}

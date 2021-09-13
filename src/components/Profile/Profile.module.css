@@ -1,0 +1,35 @@
+.loader {
+    display: flex;
+    justify-content: center;
+}
+.Profile {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px 5px rgba(0,0,0, .4);
+}
+.Profile h2 {
+    text-align: center;
+}
+.info {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+.info img {
+    width: auto;
+    margin-right: 50px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px 5px rgba(0,0,0, .4);
+
+}
+.userInfo {
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px 5px rgba(0,0,0, .4);
+    flex-grow: 2;
+}

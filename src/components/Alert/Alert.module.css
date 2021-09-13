@@ -1,0 +1,31 @@
+.Alert {
+    max-width: 1270px;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 5px 10px 2px rgba(0,0,0, .4);
+    margin: 100px auto;
+    background: rgba(255,0,0, .4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Alert h3 {
+    margin-left: 20px;
+}
+.Alert button {
+    margin-right: 50px;
+    background: transparent;
+    border: none;
+    transform: scale(1.5);
+    transition: all .4s ease-in-out;
+}
+.Alert button:hover {
+    transform: scale(2);
+    color: red;
+    cursor: pointer;
+}
+.Alert button:active {
+    transition: all .1s ease-out;
+    transform: scale(1);
+    opacity: .5;
+}

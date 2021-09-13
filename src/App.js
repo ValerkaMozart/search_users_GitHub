@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import classes from './App.module.css'
+import NavBar from "./components/NavBar/NavBar"
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Profile from "./components/Profile/Profile";
+import Alert from "./components/Alert/Alert";
+import Context from "./Context/Context";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Context>
+                <NavBar/>
+                <Alert props={{textAlert: 'Внимание, не правильно введено имя'}}/>
+                <div className={classes.AppContainer}>
+                    <Switch>
+                        <Route exact path={'/'} component={Home}/>
+                        <Route path={'/about'} component={About}/>
+                        <Route path={'/profile/:name'} component={Profile}/>
+                    </Switch>
+                </div>
+            </Context>
+
+        </BrowserRouter>
+
+
+    )
 }
 
 export default App;
